@@ -9,7 +9,7 @@ type PokemonGridProps = {
 
 export const PokemonsGrid = ({ pokemons, handleSelectPokemon }: PokemonGridProps) => {
   return (
-    <div className="w-full p-8 max-w-6xl mx-auto">
+    <div className="w-full p-8 max-w-7xl mx-auto">
       <div className="grid gap-8 p-4" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(125px, 1fr))" }}>
         {pokemons.map((pokemon) => (
           <div

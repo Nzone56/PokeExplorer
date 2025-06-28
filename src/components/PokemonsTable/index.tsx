@@ -10,7 +10,7 @@ type PokemonTableProps = {
 };
 export const PokemonsTable = ({ pokemons, handleSelectPokemon }: PokemonTableProps) => {
   return (
-    <div className="container mx-auto p-10">
+    <div className="max-w-full mx-auto p-10">
       <DataTable<unknown> columns={getColumns(handleSelectPokemon)} data={pokemons} />
     </div>
   );

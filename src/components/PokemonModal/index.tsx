@@ -44,7 +44,7 @@ export const PokemonModal = ({ pokemon, open, onOpenChange, pokemons }: ModalPro
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-md sm:max-w-xl rounded-2xl p-6">
+      <DialogContent className="max-w-md sm:max-w-xl rounded-2xl p-6" aria-describedby={undefined}>
         <DialogHeader className="mb-4 text-center">
           <DialogTitle className="text-2xl font-bold capitalize flex items-center justify-center gap-2">
             <div className="flex items-center justify-center gap-2 text-2xl font-bold">
